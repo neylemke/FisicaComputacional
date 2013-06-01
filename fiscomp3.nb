@@ -1,0 +1,2205 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[     75192,       2196]
+NotebookOptionsPosition[     61829,       1777]
+NotebookOutlinePosition[     64692,       1852]
+CellTagsIndexPosition[     64613,       1847]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Curso do Mathematica", "Section",
+ CellChangeTimes->{{3.396628918475042*^9, 3.396628934240403*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[StyleBox["Elementos do Mathematica", "Item"]], "Item",
+ CellChangeTimes->{{3.396629459899579*^9, 3.396629472558775*^9}, {
+  3.396709103851865*^9, 3.39670910392365*^9}}],
+
+Cell[TextData[StyleBox["Opera\[CCedilla]\[OTilde]es com Matrizes", "Item"]], \
+"Item",
+ CellChangeTimes->{{3.396709104860914*^9, 3.396709109882644*^9}}],
+
+Cell["Gr\[AAcute]ficos e Anima\[CCedilla]\[OTilde]es", "Item",
+ CellChangeTimes->{{3.396709096958629*^9, 3.396709101533274*^9}}],
+
+Cell["\<\
+C\[AAcute]lculo e Equa\[CCedilla]\[OTilde]es Diferenciais\
+\>", "Item",
+ CellChangeTimes->{{3.396629517971304*^9, 3.396629545082747*^9}}],
+
+Cell["\<\
+Programa\[CCedilla]\[ATilde]o Elementar no Mathematica\
+\>", "Item",
+ CellChangeTimes->{{3.39662955649756*^9, 3.396629576762732*^9}, {
+  3.396629658106667*^9, 3.396629658142105*^9}}],
+
+Cell["Tratamento de Dados e Imagens", "Item",
+ CellChangeTimes->{{3.396629660810943*^9, 3.39662966957833*^9}}],
+
+Cell["Programa\[CCedilla]\[ATilde]o Funcional", "Item",
+ CellChangeTimes->{{3.39662958943182*^9, 3.396629621231192*^9}}],
+
+Cell["Programa\[CCedilla]\[ATilde]o Baseada em Padr\[OTilde]es", "Item",
+ CellChangeTimes->{{3.396629625082445*^9, 3.396629634346519*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Paradigmas Computacionais
+\
+\>", "Section",
+ CellChangeTimes->{{3.5406390924508266`*^9, 3.540639123778314*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Paradigma Estruturado (C, Fortran)", "Item",
+ CellChangeTimes->{{3.540639101845652*^9, 3.5406391285816717`*^9}, {
+  3.540639160905469*^9, 3.5406391677570066`*^9}}],
+
+Cell["\<\
+Paradigma Orienta\[CCedilla]\[ATilde]o Objeto (C++, Java)\
+\>", "Item",
+ CellChangeTimes->{{3.540639101845652*^9, 3.5406391797499*^9}}],
+
+Cell[TextData[{
+ "Paradigma Funcional (Lisp, ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ ")\n"
+}], "Item",
+ CellChangeTimes->{{3.540639101845652*^9, 3.540639192030569*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Compila\[CCedilla]\[ATilde]o", "Section",
+ CellChangeTimes->{{3.540639208035665*^9, 3.540639222601759*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Linguagens Compiladas (C, Fortran, C++)", "Item",
+ CellChangeTimes->{{3.540639224319172*^9, 3.5406392643806543`*^9}}],
+
+Cell[TextData[{
+ "Linguagens n\[ATilde]o compiladas (Python, ",
+ StyleBox["Mathematica, JavaScript)",
+  FontSlant->"Italic"]
+}], "Item",
+ CellChangeTimes->{{3.540639224319172*^9, 3.54063931997136*^9}}],
+
+Cell["\<\
+Linguagem com M\[AAcute]quina Virtual
+\
+\>", "Item",
+ CellChangeTimes->{{3.540639224319172*^9, 3.540639307472468*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Elementos do Mathematica", "Section",
+ CellChangeTimes->{{3.396629735243097*^9, 3.396629745114226*^9}}],
+
+Cell[TextData[{
+ "O ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " funciona como um editor de texto, ele substitui padr\[OTilde]es textuais \
+por outros padr\[OTilde]es textuais. \n"
+}], "Text",
+ CellChangeTimes->{{3.396629746863202*^9, 3.396629824753433*^9}}],
+
+Cell[TextData[{
+ "O Mantra \[EAcute] \"No ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " tudo s\[ATilde]o Express\[OTilde]es\"\n"
+}], "Text",
+ CellChangeTimes->{{3.396629828285267*^9, 3.396629864409914*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Imagem", "Section",
+ CellChangeTimes->{{3.540639365075754*^9, 3.5406393679868927`*^9}}],
+
+Cell[TextData[{
+ "O ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " \[EAcute] um editor de texto gigante que transforma express\[OTilde]es em \
+express\[OTilde]es de forma iterativa. "
+}], "Text",
+ CellChangeTimes->{
+  3.5406393709450703`*^9, {3.540639410097981*^9, 3.540639457533494*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Entrada e Sa\[IAcute]da", "Section",
+ CellChangeTimes->{{3.396630106202435*^9, 3.396630116585091*^9}}],
+
+Cell["\<\
+O principal tipo de c\[EAcute]lula s\[ATilde]o as c\[EAcute]lulas de entrada, \
+elas podem executar opera\[CCedilla]\[OTilde]es e gerar ou n\[ATilde]o sa\
+\[IAcute]da. 
+Em geral uma sa\[IAcute]da \[EAcute] produzida a menos que se coloque um \
+\";\" no final.
+\
+\>", "Text",
+ CellChangeTimes->{
+  3.396630126283843*^9, {3.396630186057055*^9, 3.396630282985208*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.572005756779851*^9, 3.5720057581317253`*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Acessando o Help", "Section",
+ CellChangeTimes->{{3.572006128442604*^9, 3.572006133952814*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Atrav\[EAcute]s do Menu Help", "Item",
+ CellChangeTimes->{{3.572006137170157*^9, 3.572006139619459*^9}, {
+  3.572006198936199*^9, 3.572006207207745*^9}}],
+
+Cell["\<\
+Usando ?Plot (Informa\[CCedilla]\[OTilde]es sobre o Plot)\
+\>", "Item",
+ CellChangeTimes->{{3.572006137170157*^9, 3.572006139619459*^9}, {
+  3.572006198936199*^9, 3.5720062199021893`*^9}, {3.572006277582939*^9, 
+  3.572006286369413*^9}}],
+
+Cell["\<\
+Usando ?*Image* (Informa\[CCedilla]\[ATilde]oes sobre \
+Fun\[CCedilla]\[OTilde]es que contenam a String \[OpenCurlyDoubleQuote]Image\
+\[CloseCurlyDoubleQuote]\
+\>", "Item",
+ CellChangeTimes->{{3.572006137170157*^9, 3.572006139619459*^9}, {
+  3.572006198936199*^9, 3.572006219894603*^9}, {3.5720062628917217`*^9, 
+  3.57200633009861*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Digita\[CCedilla]\[ATilde]o", "Section",
+ CellChangeTimes->{{3.5720063671465063`*^9, 3.5720063720387697`*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Para executar um Comando Shift-Enter (ou o enter do Teclado Num\[EAcute]rico)\
+\
+\>", "Item",
+ CellChangeTimes->{{3.572006374705377*^9, 3.572006421942758*^9}}],
+
+Cell["\<\
+Cuidado com Mai\[UAcute]sculas e Min\[UAcute]sculas\
+\>", "Item",
+ CellChangeTimes->{{3.572006374705377*^9, 3.5720064406663513`*^9}}],
+
+Cell["[ ] Colchetes", "Item",
+ CellChangeTimes->{{3.572006374705377*^9, 3.572006469966753*^9}}],
+
+Cell["{ } Chaves", "Item",
+ CellChangeTimes->{{3.572006374705377*^9, 3.572006496341454*^9}, {
+  3.57200673816858*^9, 3.572006738615693*^9}}]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Atribuindo valores", "Section",
+ CellChangeTimes->{{3.396629902777527*^9, 3.396629975418048*^9}}],
+
+Cell["\<\
+
+Atribui\[CCedilla]\[ATilde]o atualizada de valores:\
+\>", "Text",
+ CellChangeTimes->{{3.396629978377584*^9, 3.396630029465354*^9}, 
+   3.39663009384962*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"chonga", "=", "2"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"baranga", "=", "chonga"}], 
+  ";"}], "\[IndentingNewLine]", "baranga", "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"chonga", "=", "3"}], 
+  ";"}], "\[IndentingNewLine]", "baranga"}], "Input",
+ CellChangeTimes->{{3.396630033239984*^9, 3.396630084437565*^9}, {
+  3.396630345713291*^9, 3.396630355332414*^9}}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.396630089692467*^9, 3.396630355846453*^9}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.396630089692467*^9, 3.396630355872404*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Atribui\[CCedilla]\[ATilde]o Postergada", "Section",
+ CellChangeTimes->{{3.396630381112088*^9, 3.396630399384245*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"chonga", ":=", "baranga"}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"baranga", "=", "2"}], ";"}], "\[IndentingNewLine]", "chonga", 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"baranga", "=", "3"}], ";"}], "\[IndentingNewLine]", 
+   "chonga"}]}]], "Input",
+ CellChangeTimes->{{3.396630401093383*^9, 3.396630442291471*^9}}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{3.396630442946848*^9}],
+
+Cell[BoxData["3"], "Output",
+ CellChangeTimes->{3.396630443040999*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Fun\[CCedilla]\[OTilde]es", "Section",
+ CellChangeTimes->{{3.396630499257292*^9, 3.396630504439858*^9}}],
+
+Cell[TextData[{
+ "\nFun\[CCedilla]\[OTilde]es no ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " s\[ATilde]o regras de transforma\[CCedilla]\[ATilde]o. Elas procuram por \
+padr\[OTilde]es e executam substitui\[CCedilla]\[OTilde]es."
+}], "Text",
+ CellChangeTimes->{{3.396630506808191*^9, 3.39663058632905*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"f", "[", "x_", "]"}], ":=", 
+    RowBox[{"x", "^", "2"}]}], ";"}]}]], "Input",
+ CellChangeTimes->{{3.396630588948815*^9, 3.396630605187575*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"f", "[", "2", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"f", "[", "2.", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"f", "[", "cachorro", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"f", "[", "I", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"2", "//", "f", " ", 
+    RowBox[{"(*", " ", 
+     RowBox[{
+     "Uma", " ", "maneira", " ", "diferente", " ", "de", " ", "dizer", " ", 
+      "a", " ", "mesma", " ", "coisa"}], " ", "*)"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.396630608251294*^9, 3.396630717778274*^9}}],
+
+Cell[BoxData["4"], "Output",
+ CellChangeTimes->{{3.396630639027714*^9, 3.396630662447501*^9}, 
+   3.396630695709812*^9}],
+
+Cell[BoxData["4.`"], "Output",
+ CellChangeTimes->{{3.396630639027714*^9, 3.396630662447501*^9}, 
+   3.39663069580661*^9}],
+
+Cell[BoxData[
+ SuperscriptBox["cachorro", "2"]], "Output",
+ CellChangeTimes->{{3.396630639027714*^9, 3.396630662447501*^9}, 
+   3.396630695917319*^9}],
+
+Cell[BoxData[
+ RowBox[{"-", "1"}]], "Output",
+ CellChangeTimes->{{3.396630639027714*^9, 3.396630662447501*^9}, 
+   3.396630696035562*^9}],
+
+Cell[BoxData[
+ RowBox[{"F", "[", "2", "]"}]], "Output",
+ CellChangeTimes->{{3.396630639027714*^9, 3.396630662447501*^9}, 
+   3.396630696153392*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Tipos", "Section",
+ CellChangeTimes->{{3.396630740392542*^9, 3.396630744039081*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Inteiros", "Item",
+ CellChangeTimes->{{3.396630745684595*^9, 3.396630790391922*^9}}],
+
+Cell["Reais", "Item",
+ CellChangeTimes->{{3.396630793511447*^9, 3.396630798148068*^9}}],
+
+Cell["Complexos", "Item",
+ CellChangeTimes->{{3.396630799255615*^9, 3.396630801969234*^9}}],
+
+Cell["Strings", "Item",
+ CellChangeTimes->{{3.39663080314388*^9, 3.396630806491872*^9}}],
+
+Cell["Express\[OTilde]es", "Item",
+ CellChangeTimes->{{3.396630809575069*^9, 3.39663081192698*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Restingindo Fun\[CCedilla]\[OTilde]es", "Section",
+ CellChangeTimes->{{3.396630907272046*^9, 3.39663092477462*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"fact", "[", "n_Integer", "]"}], ":=", 
+   RowBox[{"n", "!"}]}]}]], "Input",
+ CellChangeTimes->{{3.396630926879978*^9, 3.396630967860335*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"fact", "[", "7", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"fact", "[", "7.1", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.396630958648284*^9, 3.396630979091137*^9}}],
+
+Cell[BoxData["5040"], "Output",
+ CellChangeTimes->{{3.396630964000604*^9, 3.396630979776987*^9}}],
+
+Cell[BoxData[
+ RowBox[{"fact", "[", "7.1`", "]"}]], "Output",
+ CellChangeTimes->{{3.396630964000604*^9, 3.396630979880995*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"fact", "[", "x_Real", "]"}], "=", 
+    RowBox[{"Gamma", "[", 
+     RowBox[{"x", "+", "1"}], "]"}]}], ";"}]}]], "Input",
+ CellChangeTimes->{{3.39663098343961*^9, 3.396630999763772*^9}, {
+  3.396631035129635*^9, 3.39663103531569*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"fact", "[", "7.1", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"fact", "[", "7.", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.396631001698819*^9, 3.396631017666559*^9}}],
+
+Cell[BoxData["6169.593697484543`"], "Output",
+ CellChangeTimes->{{3.396631007969508*^9, 3.396631038322294*^9}}],
+
+Cell[BoxData["5040.`"], "Output",
+ CellChangeTimes->{{3.396631007969508*^9, 3.396631038353441*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Fun\[CCedilla]\[OTilde]es com muitas vari\[AAcute]veis", "Section",
+ CellChangeTimes->{{3.572007671193715*^9, 3.572007673274879*^9}}],
+
+Cell[TextData[{
+ "\n",
+ Cell[BoxData[
+  RowBox[{"\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{
+     RowBox[{
+      RowBox[{"f", "[", 
+       RowBox[{"x_", ",", "y_", ",", "z_"}], "]"}], "=", 
+      RowBox[{
+       RowBox[{"x", "*", "x"}], "+", 
+       RowBox[{"y", "*", "y"}], "+", 
+       RowBox[{"z", "*", "z"}]}]}], ";"}], "\[IndentingNewLine]"}]}]], "Input",
+  CellChangeTimes->{{3.39663194736647*^9, 3.396631979459178*^9}}],
+ "\n",
+ Cell[BoxData[
+  RowBox[{"\[IndentingNewLine]", 
+   RowBox[{"f", "[", 
+    RowBox[{"1", ",", "1", ",", "1"}], "]"}]}]], "Input",
+  CellChangeTimes->{{3.396631981292192*^9, 3.396631985822902*^9}}],
+ "\n",
+ Cell[BoxData["3"], "Output",
+  CellChangeTimes->{{3.396631986686726*^9, 3.396631991187097*^9}}],
+ "\n",
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]],
+ "\n",
+ Cell[BoxData[""], "Input",
+  CellChangeTimes->{{3.572007640820979*^9, 3.5720076432430973`*^9}}]
+}], "Text",
+ CellChangeTimes->{{3.572007659577043*^9, 3.572007669040757*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Exerc\[IAcute]cio", "Section",
+ CellChangeTimes->{{3.39663107733566*^9, 3.396631093206088*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["\<\
+Construa uma fun\[CCedilla]\[ATilde]o que calcule o volume de um paralelep\
+\[IAcute]do de lados a,b e c. Construa uma fun\[CCedilla]\[ATilde]o que \
+calcule a \[AAcute]rea lateral do mesmo paralelepipido. \
+\>", "Item",
+ CellChangeTimes->{{3.396631096467336*^9, 3.396631136390292*^9}, {
+  3.396631178582398*^9, 3.39663122337962*^9}, {3.572006976632182*^9, 
+  3.572007064624312*^9}, {3.572007102835391*^9, 3.572007110047187*^9}}],
+
+Cell["\<\
+Construa uma fun\[CCedilla]\[ATilde]o que calcule o m\[OAcute]dulo de um n\
+\[UAcute]mero real. Generalize para o caso de um n\[UAcute]mero Complexo. \
+Como se calcula o conjugado de um n\[UAcute]mero Complexo? Use o help para \
+buscar alternativas.\
+\>", "Item",
+ CellChangeTimes->{{3.396631229992391*^9, 3.396631320214011*^9}, 
+   3.572007085829282*^9, {3.5720072089242153`*^9, 3.5720072319423943`*^9}}],
+
+Cell["\<\
+Implemente uma fun\[CCedilla]\[ATilde]o que conte o n\[UAcute]mero de \
+algarismos pares em um n\[UAcute]mero natural.\
+\>", "Item",
+ CellChangeTimes->{{3.540639494446439*^9, 3.5406396561478033`*^9}, 
+   3.572007151931419*^9}],
+
+Cell["\<\
+Inplemente a fun\[CCedilla]\[ATilde]o sucessor: Ela transforma uma string \
+formada ppr \[OpenCurlyDoubleQuote]|||| ... |||\[CloseCurlyDoubleQuote] e \
+adiciona um \[OpenCurlyDoubleQuote]|\[CloseCurlyDoubleQuote] extra.\
+\>", "Item",
+ CellChangeTimes->{{3.540639659506754*^9, 3.540639812558222*^9}, 
+   3.572007255803018*^9, {3.572007556295513*^9, 3.572007556940063*^9}}]
+}, Open  ]],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.572007244395857*^9}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Exerc\[IAcute]cio", "Section",
+ CellChangeTimes->{{3.396631478214361*^9, 3.396631483540937*^9}}],
+
+Cell[TextData[{
+ "Construa uma fun\[CCedilla]\[ATilde]o que tomando como entrada \na, b e c e \
+calcule o n\[UAcute]mero de ra\[IAcute]zes da equa\[CCedilla]\[ATilde]o de \
+segundo grau; ",
+ Cell[BoxData[
+  FormBox[
+   RowBox[{
+    RowBox[{
+     SuperscriptBox["ax", "2"], "+", "bx", "+", "c"}], "=", "0"}], 
+   TraditionalForm]]],
+ ". Descubra como funciona o comando If. \n"
+}], "Text",
+ CellChangeTimes->{{3.396631485683736*^9, 3.396631587784853*^9}, {
+   3.396631710193646*^9, 3.396631718212325*^9}, {3.396631887524879*^9, 
+   3.39663190595625*^9}, {3.5406389438652973`*^9, 3.5406390024360447`*^9}, {
+   3.540644552790401*^9, 3.540644553272715*^9}, 3.572007690138281*^9}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Listas", "Section",
+ CellChangeTimes->{{3.396632049155097*^9, 3.396632052547755*^9}}],
+
+Cell[TextData[{
+ "No ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " o uso de listas \[EAcute] muito flex\[IAcute]vel.\n"
+}], "Text",
+ CellChangeTimes->{{3.396632056377358*^9, 3.396632153235573*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"lista", "=", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2", ",", "3"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"lista", "+", "lista"}], "\[IndentingNewLine]", 
+ RowBox[{"Sin", "[", "lista", "]"}]}], "Input",
+ CellChangeTimes->{{3.396632155186048*^9, 3.39663218316972*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"2", ",", "4", ",", "6"}], "}"}]], "Output",
+ CellChangeTimes->{3.396632184255485*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"Sin", "[", "1", "]"}], ",", 
+   RowBox[{"Sin", "[", "2", "]"}], ",", 
+   RowBox[{"Sin", "[", "3", "]"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.396632184358208*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Listas", "Section",
+ CellChangeTimes->{{3.396632243715528*^9, 3.396632246530647*^9}}],
+
+Cell["\<\
+Os elementos de uma lista podem ser quase qualquer coisa, at\[EAcute] mesmo \
+outras listas.
+\
+\>", "Text",
+ CellChangeTimes->{{3.396632250999866*^9, 3.396632284291337*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"lista", "=", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", "2", ",", 
+      RowBox[{"{", 
+       RowBox[{"1", ",", "2"}], "}"}]}], "}"}]}], "\[IndentingNewLine]", 
+   RowBox[{"lista2", "=", 
+    RowBox[{"{", 
+     RowBox[{"1", ",", 
+      RowBox[{"Cos", "[", "x", "]"}], ",", "\"\<banana\>\"", ",", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
+        RowBox[{"Cos", "[", "x", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "10"}], "}"}]}], "]"}]}], 
+     "}"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.39663220921191*^9, 3.396632222190627*^9}, {
+   3.396632288899607*^9, 3.396632329318495*^9}, 3.396632458878484*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "2", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.396632452589235*^9, 3.396632459723935*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", 
+   RowBox[{"Cos", "[", "x", "]"}], ",", "\<\"banana\"\>", ",", 
+   GraphicsBox[{{}, {}, 
+     {Hue[0.67, 0.6, 0.6], LineBox[CompressedData["
+1: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
+TZ3ypyGdiVnKJ688+ZLxpw//D4mJ72k=
+       "]]}},
+    AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+    Axes->True,
+    AxesOrigin->{0, 0},
+    PlotRange->{{0, 10}, {-0.9999997966795732, 0.9999999999999791}},
+    PlotRangeClipping->True,
+    PlotRangePadding->{
+      Scaled[0.02], 
+      Scaled[0.02]}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.396632452589235*^9, 3.396632460041418*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Acessando Elementos ", "Section",
+ CellChangeTimes->{{3.396632511649708*^9, 3.39663251974644*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{"lista", "\[IndentingNewLine]", 
+   RowBox[{"lista", "[", 
+    RowBox[{"[", "1", "]"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"lista", "[", 
+    RowBox[{"[", 
+     RowBox[{"{", 
+      RowBox[{"1", ",", "2"}], "}"}], "]"}], "]"}], "\[IndentingNewLine]", 
+   RowBox[{"lista", "[", 
+    RowBox[{"[", 
+     RowBox[{"3", ",", "2"}], "]"}], "]"}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.396632521876793*^9, 3.396632575884475*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "2", ",", 
+   RowBox[{"{", 
+    RowBox[{"1", ",", "2"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.396632528772859*^9, 3.396632542411578*^9}, 
+   3.396632576448329*^9}],
+
+Cell[BoxData["1"], "Output",
+ CellChangeTimes->{{3.396632528772859*^9, 3.396632542411578*^9}, 
+   3.396632576533111*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"1", ",", "2"}], "}"}]], "Output",
+ CellChangeTimes->{{3.396632528772859*^9, 3.396632542411578*^9}, 
+   3.396632576642596*^9}],
+
+Cell[BoxData["2"], "Output",
+ CellChangeTimes->{{3.396632528772859*^9, 3.396632542411578*^9}, 
+   3.396632576747966*^9}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"],
+
+Cell[BoxData[""], "Input",
+ CellChangeTimes->{{3.396709393646959*^9, 3.396709398085929*^9}}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Fun\[CCedilla]\[OTilde]es Puras", "Section",
+ CellChangeTimes->{{3.396709416091097*^9, 3.39670942196283*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+     RowBox[{"f", "[", "x_", "]"}], ":=", 
+     RowBox[{"x", " ", "^", "2"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"g", ":=", " ", 
+     RowBox[{
+      RowBox[{"#", "^", "2"}], "&"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"h", ":=", 
+     RowBox[{
+      RowBox[{"(", 
+       RowBox[{
+        RowBox[{"#1", "^", "2"}], "+", 
+        RowBox[{"#2", "^", "3"}]}], ")"}], "&"}]}], ";"}]}]}]], "Input",
+ CellChangeTimes->{{3.396709425534313*^9, 3.396709478227387*^9}, {
+  3.396709516418634*^9, 3.39670958103574*^9}}],
+
+Cell[BoxData["\[IndentingNewLine]"], "Input",
+ CellChangeTimes->{3.396709509521529*^9}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"f", "[", "2", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"g", "[", "2", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"h", "[", 
+    RowBox[{"1", ",", "2"}], "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.396709480205016*^9, 3.396709485401484*^9}, {
+  3.396709558586314*^9, 3.396709561322767*^9}}],
+
+Cell[BoxData["4"], "Output",
+ CellChangeTimes->{
+  3.39670948614614*^9, 3.396709519792495*^9, {3.396709561989463*^9, 
+   3.396709584645253*^9}}],
+
+Cell[BoxData["4"], "Output",
+ CellChangeTimes->{
+  3.39670948614614*^9, 3.396709519792495*^9, {3.396709561989463*^9, 
+   3.396709584672489*^9}}],
+
+Cell[BoxData["9"], "Output",
+ CellChangeTimes->{
+  3.39670948614614*^9, 3.396709519792495*^9, {3.396709561989463*^9, 
+   3.396709584690379*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Comandos em Listas", "Section",
+ CellChangeTimes->{{3.396632628437781*^9, 3.396632635713444*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Table - Cria Listas", "Item",
+ CellChangeTimes->{{3.396709140874809*^9, 3.396709171271031*^9}}],
+
+Cell["Append - Coloca Termos no Final de uma Lista", "Item",
+ CellChangeTimes->{{3.396709175883638*^9, 3.396709195917113*^9}}],
+
+Cell["Prepend - Coloca Termos no Inicio de uma Lista", "Item",
+ CellChangeTimes->{{3.396709197594561*^9, 3.396709212574254*^9}}],
+
+Cell["Sort - Ordena Lista", "Item",
+ CellChangeTimes->{{3.396709213578775*^9, 3.39670922384891*^9}}],
+
+Cell["Take - Obtem Elementos de uma Lista", "Item",
+ CellChangeTimes->{{3.396709225098786*^9, 3.396709239506939*^9}}],
+
+Cell["\<\
+ Select - Seleciona Elementos de uma Lista Baseado em Crit\[EAcute]rios\
+\>", "Item",
+ CellChangeTimes->{{3.396709298599979*^9, 3.396709334187836*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Exerc\[IAcute]cio", "Section",
+ CellChangeTimes->{{3.396709609211245*^9, 3.39670963322614*^9}, {
+  3.396709796409687*^9, 3.396709799305678*^9}}],
+
+Cell["\<\
+Gere uma tabela contendo os n\[UAcute]meros impares eselecione aqueles que s\
+\[ATilde]o quadrados perfeitos.
+\
+\>", "Text",
+ CellChangeTimes->{{3.396709801424299*^9, 3.396709861337261*^9}, {
+   3.540644579368328*^9, 3.540644581404505*^9}, 3.57200771892524*^9}]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"],
+
+Cell[CellGroupData[{
+
+Cell["Exerc\[IAcute]cio", "Section",
+ CellChangeTimes->{{3.396709888554414*^9, 3.396709901641397*^9}}],
+
+Cell["\<\
+
+Gere uma Tabela contendo 1000 triplas de n\[UAcute]meros inteiros aleat\
+\[OAcute]rios menores que 1000. Use o comando Random[]. 
+Agora considere os polinomios formados utilizando
+os valores aleat\[OAcute]rios {a,b,c} na forma  a*x^2+b*x+c. E determine que \
+fra\[CCedilla]\[ATilde]o deles possui duas ra\[IAcute]zes reais, 1 \
+\[UAcute]nica raiz e duas ra\[IAcute]zes complexas.  \
+\>", "Text",
+ CellChangeTimes->{{3.396709903444547*^9, 3.396710109016462*^9}, {
+  3.572006598829995*^9, 3.572006634563643*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Matrizes", "Section",
+ CellChangeTimes->{{3.396710600407616*^9, 3.396710604280377*^9}}],
+
+Cell[TextData[{
+ "No ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " Vetores e Matrizes s\[ATilde]o representados por Listas.\n"
+}], "Text",
+ CellChangeTimes->{{3.396710606283078*^9, 3.396710644679877*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"ve1", "=", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", "y"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"ve2", "=", 
+     RowBox[{"{", 
+      RowBox[{"u", ",", "v"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"A", "=", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"a", ",", "b"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"c", ",", "d"}], "}"}]}], "}"}]}], 
+   "\[IndentingNewLine]"}]}]], "Input",
+ CellChangeTimes->{{3.39671064686711*^9, 3.396710692282013*^9}, 
+   3.396710785203378*^9}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "b"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"c", ",", "d"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.396710780405731*^9, 3.396710785777273*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", " ", ",", "c"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", " ", "d"}], "}"}]}], "}"}]], "Input",
+ CellChangeTimes->{{3.396710711656239*^9, 3.396710733423314*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"a", ",", "c"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", "d"}], "}"}]}], "}"}]], "Output",
+ CellChangeTimes->{3.396710737292006*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"ve1", ".", "ve2"}], "\[IndentingNewLine]", 
+   RowBox[{"A", ".", "ve1"}], "\[IndentingNewLine]", 
+   RowBox[{"Det", "[", "A", "]"}]}]}]], "Input",
+ CellChangeTimes->{{3.396710697406111*^9, 3.396710707060775*^9}, {
+  3.396710748663086*^9, 3.396710766086697*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"u", " ", "x"}], "+", 
+  RowBox[{"v", " ", "y"}]}]], "Output",
+ CellChangeTimes->{{3.396710707930945*^9, 3.396710787761495*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"a", " ", "x"}], "+", 
+    RowBox[{"b", " ", "y"}]}], ",", 
+   RowBox[{
+    RowBox[{"c", " ", "x"}], "+", 
+    RowBox[{"d", " ", "y"}]}]}], "}"}]], "Output",
+ CellChangeTimes->{{3.396710707930945*^9, 3.396710788114753*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"-", "b"}], " ", "c"}], "+", 
+  RowBox[{"a", " ", "d"}]}]], "Output",
+ CellChangeTimes->{{3.396710707930945*^9, 3.396710788197163*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Exemplos", "Section",
+ CellChangeTimes->{{3.39671081056812*^9, 3.39671081416784*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{"A", "=", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"1", ",", "2"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"3", ",", "4"}], "}"}]}], "}"}]}], ";"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{"Eigenvalues", "[", "A", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Eigenvectors", "[", "A", "]"}], "\[IndentingNewLine]", 
+   RowBox[{"Eigensystem", "[", "A", "]"}], "\[IndentingNewLine]"}]}]], "Input",\
+
+ CellChangeTimes->{{3.396710824251464*^9, 3.396710904353093*^9}, {
+  3.396711043161049*^9, 3.39671108958856*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Exerc\[IAcute]cio", "Section",
+ CellChangeTimes->{{3.396710917878046*^9, 3.3967109239583*^9}}],
+
+Cell["\<\
+
+Gere 1000 matrizes aleat\[OAcute]rias formados por inteiros 
+menores do que 1000. Determine quantas matrizes possuem os dois autovalores \
+reais, complexos e dois autovalores iguais. \
+\>", "Text",
+ CellChangeTimes->{{3.39671092632473*^9, 3.396711034982106*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Exerc\[IAcute]cio", "Section",
+ CellChangeTimes->{{3.396711106616473*^9, 3.396711113188627*^9}}],
+
+Cell["\<\
+Crie uma fun\[CCedilla]\[ATilde]o que calcule a Exponencial de uma Matriz. \
+Existem v\[AAcute]rias formas de fazer isto. Fa\[CCedilla]a da forma esperta. \
+Se realmente voc\[EHat] quiser se divertir
+fa\[CCedilla]a uma fun\[CCedilla]\[ATilde]o que calcule a Tangente de uma 
+matriz. 
+Generalize sua fun\[CCedilla]\[ATilde]o para que fa\[CCedilla]a o \
+c\[AAcute]lculo da matriz de  qualquer fun\[CCedilla]\[ATilde]o \
+anal\[IAcute]tica. \
+\>", "Text",
+ CellChangeTimes->{{3.396711115287226*^9, 3.396711286196222*^9}, {
+  3.572006671652101*^9, 3.572006675285893*^9}}],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"]],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  Appearance->{Automatic, None},
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"]]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowSize->{794, 589},
+WindowMargins->{{260, Automatic}, {115, Automatic}},
+PrivateNotebookOptions->{"VersionedStylesheet"->{"Default.nb"[8.] -> False}},
+ShowSelection->True,
+FrontEndVersion->"9.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (November 20, \
+2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[567, 22, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[2821, 88, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[3618, 123, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[4364, 154, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[5884, 203, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[6414, 225, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[7919, 271, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[8954, 306, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[9801, 339, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[11638, 399, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[13294, 453, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[16179, 542, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[17695, 592, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[20261, 674, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[22217, 733, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[24847, 804, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[26549, 853, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[28476, 919, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[44147, 1219, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[46455, 1294, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[50762, 1427, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[51324, 1448, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[53656, 1512, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[57302, 1643, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[58949, 1694, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[60247, 1734, 64, 1, 74, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 62279, 1791}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[567, 22, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[656, 27, 105, 1, 80, "Section"],
+Cell[CellGroupData[{
+Cell[786, 32, 182, 2, 28, "Item"],
+Cell[971, 36, 152, 2, 29, "Item"],
+Cell[1126, 40, 128, 1, 29, "Item"],
+Cell[1257, 43, 147, 3, 29, "Item"],
+Cell[1407, 48, 192, 4, 29, "Item"],
+Cell[1602, 54, 110, 1, 28, "Item"],
+Cell[1715, 57, 120, 1, 29, "Item"],
+Cell[1838, 60, 138, 1, 29, "Item"]
+}, Open  ]],
+Cell[1991, 64, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2821, 88, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[2910, 93, 121, 4, 115, "Section"],
+Cell[CellGroupData[{
+Cell[3056, 101, 169, 2, 28, "Item"],
+Cell[3228, 105, 145, 3, 29, "Item"],
+Cell[3376, 110, 181, 6, 45, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3618, 123, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[3707, 128, 113, 1, 80, "Section"],
+Cell[CellGroupData[{
+Cell[3845, 133, 123, 1, 28, "Item"],
+Cell[3971, 136, 201, 5, 28, "Item"],
+Cell[4175, 143, 128, 4, 45, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4364, 154, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[4453, 159, 109, 1, 80, "Section"],
+Cell[4565, 162, 268, 7, 49, "Text"],
+Cell[4836, 171, 215, 6, 49, "Text"],
+Cell[5054, 179, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5884, 203, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[5973, 208, 93, 1, 80, "Section"],
+Cell[6069, 211, 296, 8, 30, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6414, 225, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[6503, 230, 108, 1, 80, "Section"],
+Cell[6614, 233, 375, 9, 69, "Text"],
+Cell[6992, 244, 781, 18, 26, "PreviousNext"],
+Cell[7776, 264, 94, 1, 28, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7919, 271, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[8008, 276, 101, 1, 80, "Section"],
+Cell[CellGroupData[{
+Cell[8134, 281, 159, 2, 28, "Item"],
+Cell[8296, 285, 247, 5, 29, "Item"],
+Cell[8546, 292, 347, 7, 29, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[8954, 306, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[9043, 311, 116, 1, 80, "Section"],
+Cell[CellGroupData[{
+Cell[9184, 316, 169, 4, 28, "Item"],
+Cell[9356, 322, 143, 3, 28, "Item"],
+Cell[9502, 327, 95, 1, 28, "Item"],
+Cell[9600, 330, 140, 2, 28, "Item"]
+}, Open  ]]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9801, 339, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[9890, 344, 103, 1, 80, "Section"],
+Cell[9996, 347, 167, 5, 50, "Text"],
+Cell[CellGroupData[{
+Cell[10188, 356, 415, 10, 97, "Input"],
+Cell[10606, 368, 92, 1, 28, "Output"],
+Cell[10701, 371, 92, 1, 28, "Output"]
+}, Open  ]],
+Cell[10808, 375, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[11638, 399, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[11727, 404, 124, 1, 80, "Section"],
+Cell[CellGroupData[{
+Cell[11876, 409, 427, 11, 114, "Input"],
+Cell[12306, 422, 70, 1, 28, "Output"],
+Cell[12379, 425, 70, 1, 28, "Output"]
+}, Open  ]],
+Cell[12464, 429, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[13294, 453, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[13383, 458, 110, 1, 80, "Section"],
+Cell[13496, 461, 316, 7, 69, "Text"],
+Cell[13815, 470, 227, 6, 46, "Input"],
+Cell[CellGroupData[{
+Cell[14067, 480, 577, 12, 114, "Input"],
+Cell[14647, 494, 120, 2, 28, "Output"],
+Cell[14770, 498, 121, 2, 28, "Output"],
+Cell[14894, 502, 150, 3, 32, "Output"],
+Cell[15047, 507, 137, 3, 28, "Output"],
+Cell[15187, 512, 147, 3, 28, "Output"]
+}, Open  ]],
+Cell[15349, 518, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16179, 542, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[16268, 547, 90, 1, 80, "Section"],
+Cell[CellGroupData[{
+Cell[16383, 552, 90, 1, 28, "Item"],
+Cell[16476, 555, 87, 1, 28, "Item"],
+Cell[16566, 558, 91, 1, 28, "Item"],
+Cell[16660, 561, 88, 1, 28, "Item"],
+Cell[16751, 564, 99, 1, 28, "Item"]
+}, Open  ]],
+Cell[16865, 568, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[17695, 592, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[17784, 597, 121, 1, 80, "Section"],
+Cell[17908, 600, 211, 5, 46, "Input"],
+Cell[CellGroupData[{
+Cell[18144, 609, 235, 5, 63, "Input"],
+Cell[18382, 616, 97, 1, 28, "Output"],
+Cell[18482, 619, 127, 2, 28, "Output"]
+}, Open  ]],
+Cell[18624, 624, 315, 8, 46, "Input"],
+Cell[CellGroupData[{
+Cell[18964, 636, 236, 5, 63, "Input"],
+Cell[19203, 643, 111, 1, 28, "Output"],
+Cell[19317, 646, 99, 1, 28, "Output"]
+}, Open  ]],
+Cell[19431, 650, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[20261, 674, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[20350, 679, 139, 1, 80, "Section"],
+Cell[20492, 682, 1676, 45, 154, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[22217, 733, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[22306, 738, 101, 1, 80, "Section"],
+Cell[CellGroupData[{
+Cell[22432, 743, 439, 7, 46, "Item"],
+Cell[22874, 752, 415, 7, 46, "Item"],
+Cell[23292, 761, 236, 5, 29, "Item"],
+Cell[23531, 768, 381, 6, 29, "Item"]
+}, Open  ]],
+Cell[23927, 777, 87, 1, 46, "Input"],
+Cell[24017, 780, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[24847, 804, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[24936, 809, 102, 1, 80, "Section"],
+Cell[25041, 812, 675, 15, 90, "Text"],
+Cell[25719, 829, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[26549, 853, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[26638, 858, 91, 1, 80, "Section"],
+Cell[26732, 861, 206, 6, 49, "Text"],
+Cell[CellGroupData[{
+Cell[26963, 871, 319, 8, 63, "Input"],
+Cell[27285, 881, 125, 3, 28, "Output"],
+Cell[27413, 886, 218, 6, 28, "Output"]
+}, Open  ]],
+Cell[27646, 895, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[28476, 919, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[28565, 924, 91, 1, 80, "Section"],
+Cell[28659, 927, 183, 5, 49, "Text"],
+Cell[CellGroupData[{
+Cell[28867, 936, 706, 19, 63, "Input"],
+Cell[29576, 957, 198, 5, 28, "Output"],
+Cell[29777, 964, 13525, 228, 122, "Output"]
+}, Open  ]],
+Cell[43317, 1195, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[44147, 1219, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[44236, 1224, 104, 1, 80, "Section"],
+Cell[CellGroupData[{
+Cell[44365, 1229, 509, 13, 114, "Input"],
+Cell[44877, 1244, 224, 6, 28, "Output"],
+Cell[45104, 1252, 120, 2, 28, "Output"],
+Cell[45227, 1256, 165, 4, 28, "Output"],
+Cell[45395, 1262, 120, 2, 28, "Output"]
+}, Open  ]],
+Cell[45530, 1267, 781, 18, 26, "PreviousNext"],
+Cell[46314, 1287, 92, 1, 28, "Input"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[46455, 1294, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[46544, 1299, 115, 1, 80, "Section"],
+Cell[46662, 1302, 632, 19, 80, "Input"],
+Cell[47297, 1323, 87, 1, 46, "Input"],
+Cell[CellGroupData[{
+Cell[47409, 1328, 358, 8, 80, "Input"],
+Cell[47770, 1338, 144, 3, 28, "Output"],
+Cell[47917, 1343, 144, 3, 28, "Output"],
+Cell[48064, 1348, 144, 3, 28, "Output"]
+}, Open  ]],
+Cell[48223, 1354, 781, 18, 26, "PreviousNext"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[49041, 1377, 103, 1, 80, "Section"],
+Cell[CellGroupData[{
+Cell[49169, 1382, 101, 1, 28, "Item"],
+Cell[49273, 1385, 126, 1, 28, "Item"],
+Cell[49402, 1388, 128, 1, 28, "Item"],
+Cell[49533, 1391, 100, 1, 28, "Item"],
+Cell[49636, 1394, 117, 1, 28, "Item"],
+Cell[49756, 1397, 161, 3, 28, "Item"]
+}, Open  ]],
+Cell[49932, 1403, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[50762, 1427, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[50851, 1432, 150, 2, 80, "Section"],
+Cell[51004, 1436, 271, 6, 49, "Text"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[51324, 1448, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[51391, 1451, 781, 18, 26, "PreviousNext"],
+Cell[CellGroupData[{
+Cell[52197, 1473, 102, 1, 80, "Section"],
+Cell[52302, 1476, 521, 10, 126, "Text"],
+Cell[52826, 1488, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[53656, 1512, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[53745, 1517, 93, 1, 80, "Section"],
+Cell[53841, 1520, 213, 6, 49, "Text"],
+Cell[CellGroupData[{
+Cell[54079, 1530, 632, 20, 97, "Input"],
+Cell[54714, 1552, 237, 7, 28, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[54988, 1564, 246, 7, 28, "Input"],
+Cell[55237, 1573, 213, 7, 28, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[55487, 1585, 331, 7, 80, "Input"],
+Cell[55821, 1594, 162, 4, 28, "Output"],
+Cell[55986, 1600, 287, 9, 28, "Output"],
+Cell[56276, 1611, 181, 5, 28, "Output"]
+}, Open  ]],
+Cell[56472, 1619, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[57302, 1643, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[57391, 1648, 91, 1, 80, "Section"],
+Cell[57485, 1651, 631, 17, 114, "Input"],
+Cell[58119, 1670, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[58949, 1694, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[59038, 1699, 100, 1, 80, "Section"],
+Cell[59141, 1702, 273, 6, 87, "Text"],
+Cell[59417, 1710, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[60247, 1734, 64, 1, 74, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[60336, 1739, 102, 1, 80, "Section"],
+Cell[60441, 1742, 576, 11, 107, "Text"],
+Cell[61020, 1755, 781, 18, 26, "PreviousNext"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

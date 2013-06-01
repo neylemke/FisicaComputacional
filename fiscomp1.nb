@@ -1,0 +1,263 @@
+(* Content-type: application/mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 6.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       145,          7]
+NotebookDataLength[      7549,        253]
+NotebookOptionsPosition[      5751,        188]
+NotebookOutlinePosition[      6439,        214]
+CellTagsIndexPosition[      6362,        209]
+WindowFrame->Normal
+ContainsDynamic->False*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["F\[IAcute]sica Computacional", "Section",
+ CellChangeTimes->{{3.396080817067672*^9, 3.396080830094614*^9}, {
+  3.396099522774777*^9, 3.396099529397405*^9}, {3.396099592823286*^9, 
+  3.396099600229226*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Plano Geral da Disciplina", "Item",
+ CellChangeTimes->{{3.396080838334051*^9, 3.396080843437623*^9}, {
+  3.396099546637905*^9, 3.396099583420057*^9}}],
+
+Cell["Instrumentos de Avalia\[CCedilla]\[ATilde]o", "Item",
+ CellChangeTimes->{{3.396099603270107*^9, 3.396099647845799*^9}}],
+
+Cell["Divis\[ATilde]o em Grupos", "Item",
+ CellChangeTimes->{{3.396099603270107*^9, 3.396099657541129*^9}}],
+
+Cell["\<\
+Introdu\[CCedilla]\[ATilde]o Festiva ao Mathematica\
+\>", "Item",
+ CellChangeTimes->{{3.396099625334123*^9, 3.396099636037472*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"],
+  ButtonFrame->"None"],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"],
+  ButtonFrame->"None"]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Plano Geral da Disciplina", "Section",
+ CellChangeTimes->{{3.396099668486207*^9, 3.396099676693005*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Apresenta\[CCedilla]\[ATilde]o (1 Aula)", "Item",
+ CellChangeTimes->{{3.396099695940919*^9, 3.396099717919084*^9}}],
+
+Cell[TextData[{
+ "Introdu\[CCedilla]\[ATilde]o ao ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ " (4 Aulas)"
+}], "Item",
+ CellChangeTimes->{{3.396099757621745*^9, 3.396099771076798*^9}, {
+  3.396099900661669*^9, 3.396099900804704*^9}}],
+
+Cell["\<\
+Desenvolvimento Pequenos Projetos (4 Aulas) \
+\>", "Item",
+ CellChangeTimes->{{3.396099774197717*^9, 3.39609982482242*^9}}],
+
+Cell["\<\
+Desenvolvimento Projeto F\[IAcute]sica M\[EAcute]dica (7 Aulas)\
+\>", "Item",
+ CellChangeTimes->{{3.39609979295057*^9, 3.396099802804925*^9}, {
+  3.396099869509694*^9, 3.396099873956685*^9}, {3.396099908484596*^9, 
+  3.396099914405643*^9}}],
+
+Cell["Apresenta\[CCedilla]\[ATilde]o Resultados", "Item",
+ CellChangeTimes->{{3.396099916806025*^9, 3.396099921892329*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"],
+  ButtonFrame->"None"],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"],
+  ButtonFrame->"None"]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["", "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+
+Cell[CellGroupData[{
+
+Cell["Avalia\[CCedilla]\[ATilde]o", "Section",
+ CellChangeTimes->{{3.396099932789228*^9, 3.396099939589663*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ "Notebooks do ",
+ StyleBox["Mathematica",
+  FontSlant->"Italic"],
+ "  realizados durante o curso (3 pontos)"
+}], "Item",
+ CellChangeTimes->{{3.396099971237126*^9, 3.396100015293766*^9}}],
+
+Cell["\<\
+Notebook do Projeto de F\[IAcute]sica M\[EAcute]dica (3 pontos)\
+\>", "Item",
+ CellChangeTimes->{{3.396100017844951*^9, 3.396100044264347*^9}}],
+
+Cell["\<\
+Artigo e Apresenta\[CCedilla]\[ATilde]o do Projeto (4 pontos)\
+\>", "Item",
+ CellChangeTimes->{{3.396100046613748*^9, 3.396100073124014*^9}}]
+}, Open  ]],
+
+Cell[TextData[{
+ ButtonBox["\[FilledLeftTriangle]\[ThickSpace]\[ThickSpace]\[ThickSpace]",
+  BaseStyle->"SlidePreviousNextLink",
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPagePrevious"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowPrevSlideText"],
+  ButtonFrame->"None"],
+ "\[ThickSpace]\[ThickSpace]|\[ThickSpace]\[ThickSpace]",
+ ButtonBox["\[ThickSpace]\[ThickSpace]\[ThickSpace]\[FilledRightTriangle]",
+  BaseStyle->"SlidePreviousNextLink",
+  ButtonFunction:>FrontEndExecute[{
+     FrontEndToken[
+      FrontEnd`ButtonNotebook[], "ScrollPageNext"]}],
+  ButtonNote->FEPrivate`FrontEndResource[
+   "FEStrings", "SlideshowNextSlideText"],
+  ButtonFrame->"None"]
+}], "PreviousNext"]
+}, Open  ]]
+}, Open  ]]
+},
+ScreenStyleEnvironment->"Working",
+WindowSize->{640, 669},
+WindowMargins->{{219, Automatic}, {45, Automatic}},
+FrontEndVersion->"6.0 for Linux x86 (32-bit) (April 20, 2007)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "SlideShowHeader"->{
+  Cell[590, 23, 64, 1, 11, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[2278, 75, 64, 1, 11, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"],
+  Cell[4208, 137, 64, 1, 4, "SlideShowNavigationBar",
+   CellTags->"SlideShowHeader"]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"SlideShowHeader", 6078, 199}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[590, 23, 64, 1, 11, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[679, 28, 211, 3, 108, "Section"],
+Cell[CellGroupData[{
+Cell[915, 35, 156, 2, 44, "Item"],
+Cell[1074, 39, 125, 1, 44, "Item"],
+Cell[1202, 42, 107, 1, 44, "Item"],
+Cell[1312, 45, 141, 3, 44, "Item"]
+}, Open  ]],
+Cell[1468, 51, 761, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2278, 75, 64, 1, 11, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[2367, 80, 110, 1, 108, "Section"],
+Cell[CellGroupData[{
+Cell[2502, 85, 121, 1, 44, "Item"],
+Cell[2626, 88, 242, 7, 44, "Item"],
+Cell[2871, 97, 133, 3, 44, "Item"],
+Cell[3007, 102, 250, 5, 44, "Item"],
+Cell[3260, 109, 123, 1, 44, "Item"]
+}, Open  ]],
+Cell[3398, 113, 761, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4208, 137, 64, 1, 4, "SlideShowNavigationBar",
+ CellTags->"SlideShowHeader"],
+Cell[CellGroupData[{
+Cell[4297, 142, 112, 1, 108, "Section"],
+Cell[CellGroupData[{
+Cell[4434, 147, 203, 6, 69, "Item"],
+Cell[4640, 155, 153, 3, 44, "Item"],
+Cell[4796, 160, 151, 3, 44, "Item"]
+}, Open  ]],
+Cell[4962, 166, 761, 18, 41, "PreviousNext"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
